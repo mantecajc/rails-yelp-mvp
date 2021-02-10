@@ -20,6 +20,26 @@ class RestaurantsController < ApplicationController
     end
   end
 
+  def chinese
+    @restaurants = Restaurant.where(category: 'chinese')
+  end
+
+  def french
+    @restaurants = Restaurant.where(category: 'french')
+  end
+
+  def belgian
+    @restaurants = Restaurant.where(category: 'belgian')
+  end
+
+  def italian
+    @restaurants = Restaurant.where(category: 'italian')
+  end
+
+  def japanese
+    @restaurants = Restaurant.where(category: 'japanese')
+  end
+
   private
 
   def restaurant_params

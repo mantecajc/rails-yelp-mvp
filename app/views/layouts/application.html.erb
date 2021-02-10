@@ -13,6 +13,15 @@
   </head>
 
   <body>
+    <div class="navbar navbar-expand-lg navbar-light bg-light">
+      <%= link_to "Wikirestaurants", restaurants_path, class: "navbar-brand" %>
+      <%= link_to "Chinese", chinese_restaurants_path, class: "nav-link" %>
+      <%= link_to "French", french_restaurants_path, class: "nav-link" %>
+      <%= link_to "Belgian", belgian_restaurants_path, class: "nav-link" %>
+      <%= link_to "Japanese", japanese_restaurants_path, class: "nav-link" %>
+      <%= link_to "Italian", italian_restaurants_path, class: "nav-link" %>
+      <%= link_to "Add a restaurant", new_restaurant_path, class: "btn btn-outline-success my-2 my-sm-0" %>
+    </div>
     <div class="container">
       <%= yield %>
     </div>
